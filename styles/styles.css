@@ -9,15 +9,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #171717;
-    height: 10%;
+    background-color: #0f0f0f;
+    height: 10vh;
     margin: 0;
     padding: 0;
 }
 
 /* nav lado izquierda */
-.nav-izquierda {
-    margin: 0 20;
+.navizquierda {
+    margin: 0 20px;
 }
 
 .logo {
@@ -25,24 +25,20 @@ nav {
 }
 
 /* nav lado centro */
-ul {
+.navcentro_ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
 }
 
-li {
-    display: inline-block;
-    margin: 16;
-}
-
-li a {
+.navcentro_ul a {
     color: #f2f2f2;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
+    margin: 10px;
 }
 
 li a:hover {
@@ -50,23 +46,32 @@ li a:hover {
 }
 
 /* nav lado derecha */
-.nav-derecha {
+.navderecha {
     display: flex;
+    align-items: center;
     margin: 0 20px;
 }
 
 .icon-busqueda {
-    margin: 0 10 0 10;
+    margin: 0 20px 0 0;
 }
 
 .icon-notificaciones {
-    margin: 0 10 0 10;
+    margin: 0 40px 0 0;
 }
 
 .carrito {
     display: flex;
     align-items: center;
-    margin: 0 10 0 10;
+    /* margin: 0 10px 0 10px; */
+    padding: 2px 16px;
+    border: #ED6FBA solid 2px;
+    border-radius: 4px;
+    background-color: #eb91c7;
+}
+
+.carrito:hover {
+    background-color: #ED6FBA;
 }
 
 .textocarrito {
@@ -75,21 +80,71 @@ li a:hover {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    margin: 0 5px 0 0;
+}
+
+span {
+    color: #ED6FBA;
+    font-weight: 900;
+    margin-left: 16px;
+    margin-right: 4px;
 }
 
 .icon-usuario {
-    margin: 0 10 0 10;
+    margin: 0 0 0 20px;
 }
 
 /* main */
 main {
-    background-color: red;
-    height: 50%;
+    background-color: #010101;
+    height: 100%;
 }
 
 /* footer */
 footer {
-    background-color: blue;
-    height: 25%;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    height: 35vh;
+}
+
+.footerizquierda {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  .footerizquierda_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .footer_textonavegacion {
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footerizquierda_redes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+/* iconos footer */
+.coloriconredes {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(6879%) hue-rotate(200deg) brightness(122%) contrast(90%);
+    margin: 0;
+    padding: 0;
+}
+.coloriconredes:hover {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(61%) saturate(1379%) hue-rotate(290deg) brightness(101%) contrast(86%);
 }
