@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171717;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav lado izquierda */
+.nav-izquierda {
+    margin: 0 20;
+}
+
+.logo {
+    margin: 0;
+}
+
+/* nav lado centro */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin: 16;
+}
+
+li a {
+    color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+li a:hover {
+    color: #ED6FBA;
+}
+
+/* nav lado derecha */
+.nav-derecha {
+    display: flex;
+    margin: 0 20px;
+}
+
+.icon-busqueda {
+    margin: 0 10 0 10;
+}
+
+.icon-notificaciones {
+    margin: 0 10 0 10;
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    margin: 0 10 0 10;
+}
+
+.textocarrito {
+    color: #f2f2f2;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
+
+.icon-usuario {
+    margin: 0 10 0 10;
+}
+
+/* main */
+main {
+    background-color: red;
+    height: 50%;
+}
+
+/* footer */
+footer {
+    background-color: blue;
+    height: 25%;
+}
