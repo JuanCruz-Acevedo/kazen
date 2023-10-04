@@ -44,6 +44,9 @@ nav {
 li a:hover {
     color: #ED6FBA;
 }
+li a:active {
+    color: #e98bc3;
+}
 
 /* nav lado derecho */
 .navderecha {
@@ -52,8 +55,18 @@ li a:hover {
     margin: 0 20px;
 }
 
-.icon-busqueda {
-    margin: 0 20px 0 0;
+.barrabuscador {
+    margin-right: 5px;
+    border: 4px solid #171717;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 4px 16px;
+}
+.barrabuscador:focus {
+    border-width: 4px;
+    border-color: #f2f2f2;
+    outline: none;
 }
 
 .icon-notificaciones {
@@ -68,12 +81,15 @@ li a:hover {
     border: #ED6FBA solid 2px;
     border-radius: 4px;
     background-color: #eb91c7;
+    cursor: pointer;
 }
 
 .carrito:hover {
     background-color: #ED6FBA;
 }
-
+.carrito:active {
+    background-color: #e98bc3;
+}
 .textocarrito {
     color: #f2f2f2;
     font-family: 'Titillium Web', sans-serif;
@@ -103,18 +119,17 @@ main {
 footer {
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #0f0f0f;
-    height: 35%;
+    height: 30vh;
     width: 100;
 }
 
 .footerizquierda {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
   }
   
   .footerizquierda_ul {
@@ -128,9 +143,9 @@ footer {
   }
   
   .footer_tituloredes {
-    color: #f2f2f2;
+    color: #e98bc3;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
   }
   
@@ -152,6 +167,10 @@ footer {
 .coloriconredes:hover {
     filter: brightness(0) saturate(100%) invert(59%) sepia(61%) saturate(1379%) hue-rotate(290deg) brightness(101%) contrast(86%);
 }
+.coloriconredes:active {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(28%) saturate(712%) hue-rotate(276deg) brightness(98%) contrast(87%);
+}
+
 .coloricontop {
     filter: brightness(0) saturate(100%) invert(59%) sepia(61%) saturate(1379%) hue-rotate(290deg) brightness(101%) contrast(86%);
     margin: 0;
@@ -160,11 +179,17 @@ footer {
 .coloricontop:hover {
     filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(6879%) hue-rotate(200deg) brightness(122%) contrast(90%);
 }
+.coloricontop:active {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(147%) hue-rotate(161deg) brightness(88%) contrast(82%);
+}
 
 .footercentro {
     display: flex;
     justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
 }
 
 .footercentro p {
@@ -185,10 +210,9 @@ footer {
     gap: 20px;
   }
 
-.footer_navegacion-titulo h3 {
-    color: #f2f2f2;
+.footer_navegacion-titulo {
+    color: #e98bc3;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
     padding: 0;
 }
 
