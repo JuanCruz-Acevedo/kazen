@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,35 +19,51 @@
 
 <body>
     <header>
-        <nav class="container-fluid">
-            <div class="navizquierda">
-                <div class="logo">
-                    <a href="../index.html"><img src="../assets/Logotipo.png" alt="logo" width="200"></a>
-                </div>
-            </div>
-            <div class="navcentro">
-                <ul class="navcentro_ul">
-                    <li class="navcentro_ul"><a href="../index.html"> Home </a></li>
-                    <li class="navcentro_ul"><a href="./productos.html"> Productos </a></li>
-                    <li class="navcentro_ul"><a href="./rosters.html"> Rosters </a></li>
-                    <li class="navcentro_ul"><a href="#"> Sobre nosotros </a></li>
-                    <li class="navcentro_ul"><a href="./contacto.html"> Contacto </a></li>
-                </ul>
-            </div>
-            <div class="navderecha">
-                <input class="barrabuscador" type="search" placeholder="Buscar...">
-                <div class="icon-busqueda">
-                    <img src="../assets/Icons/icon-search.svg" alt="busqueda">
-                </div>
-                <div class="icon-notificaciones">
-                    <img src="../assets/Icons/icon-notification.svg" alt="notificaciones">
-                </div>
-                <div class="carrito">
-                    <div class="textocarrito">$0,00 <span class="spancarritopalo">|</span></div>
-                    <img src="../assets/Icons/icon-cart.svg" alt="carrito">
-                </div>
-                <div class="icon-usuario">
-                    <img src="../assets/Icons/icon-user.svg" alt="usuario">
+        <nav class="navbar navbar-expand-lg" style="background-color: #171717;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="nav_headerlogo" src="../assets/Logotipo.png" alt="logo" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown nav_centro-texto texto-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>Productos</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li"><a class="dropdown-item" href="#">Pro Kit</a></li>
+                                <li"><a class="dropdown-item" href="#">Lifestyle</a></li>
+                                <li"><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li"><a class="dropdown-item" href="#">Hardware</a></li>
+                                <li"><a class="dropdown-item" href="../pages/productos.html">Ver todo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" href="../pages/rosters.html">Roster</a>
+                        </li>
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" aria-current="page" href="#">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" href="../pages/contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 texto-input" type="search" placeholder="Buscar..."
+                            aria-label="Search">
+                        <button class="btn btn-sm btn-outline-primary texto-boton-secundario"
+                            type="submit">Ingresar</button>
+                        <button class="btn btn-primary texto-boton-primario" type="submit">Registrarse</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -52,67 +71,86 @@
     <main class="container-fluid">
 
     </main>
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="footerizquierda col-sm-12 col-md-4 col-lg-4">
-                <img src="../assets/isotipo.ico" alt="logo">
-            </div>
-            <div class="footercentro col-sm-6 col-md-4 col-lg-4">
-                <ul class="footerizquierda_ul">
-                    <li>
-                        <h3 class="footer_tituloredes">Unite a la comunidad</h3>
-                    </li>
-                    <li>
-                        <div class="footerizquierda_redes">
-                            <a href="http://www.youtube.com" target="_blank">
-                                <img class="coloriconredes" src="../assets/Icons/icon-youtube.svg" alt="youtube"
-                                    width="32">
-                            </a>
-                            <a href="http://www.twitch.tv" target="_blank">
-                                <img class="coloriconredes" src="../assets/Icons/icon-twitch.svg" alt="twitch"
-                                    width="32">
-                            </a>
-                            <a href="http://www.instagram.com" target="_blank">
-                                <img class="coloriconredes" src="../assets/Icons/icon-instagram.svg" alt="instagram"
-                                    width="32">
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="footerizquierda_redes">
-                            <a href="http://www.twitter.com" target="_blank">
-                                <img class="coloriconredes" src="../assets/Icons/icon-twitter.svg" alt="twitter"
-                                    width="32">
-                            </a>
-                            <a href="http://www.discord.com" target="_blank">
-                                <img class="coloriconredes" src="../assets/Icons/icon-discord.svg" alt="discord"
-                                    width="32">
-                            </a>
-                            <a href="http://www.facebook.com" target="_blank">
-                                <img class="coloriconredes" src="../assets/Icons/icon-facebook.svg" alt="facebook"
-                                    width="32">
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <p>© 2023 <span class="footer_derechostexto">KAZEN</span> | Todos los derechos reservados.</p>
-            </div>
-            <div class="footerderecha col-sm-6 col-md-4 col-lg-4">
-                <div class="footer_navegacion-titulo">
-                    <h3>Navegación</h3>
+    <footer>
+        <div class="container-fluid footerbs-gutter-x">
+
+            <div class="row p-5 footer-bg text-white">
+
+                <div class="col-xs-12 col-md 3 col-lg-4 footer_izquierda">
+                    <a href="#">
+                        <img src="../assets/isotipo.ico" alt="logo">
+                    </a>
                 </div>
-                <ul class="footer_navegacion">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./rosters.html">Roster</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-                <a href="#">
-                    <img class="coloricontop" src="../assets/Icons/icon-top.svg" alt="Top" width="32">
-                </a>
+                <div class="col-xs-12 col-md 3 col-lg-4 footer_centro">
+                    <h3 class="footer_texto-titulo">Unite a la comunidad</h3>
+                    <ul class="footer_iconosredes">
+                        <div class="footer_iconosredes-x">
+                            <li>
+                                <a href="http://www.youtube.com" target="_blank">
+                                   <img src="../assets/Icons/icon-youtube.svg" alt="youtube" width="32" class="coloriconredes">
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="http://www.twitch.tv" target="_blank">
+                                   <img src="../assets/Icons/icon-twitch.svg" alt="twitch" width="32"class="coloriconredes">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.instagram.com" target="_blank">
+                                    <img src="../assets/Icons/icon-instagram.svg" alt="instagram" width="32"class="coloriconredes">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="footer_iconosredes-x">
+                            <li>
+                                <a href="http://www.twitter.com" target="_blank">
+                                    <img src="../assets/Icons/icon-twitter.svg" alt="twitter" width="32"class="coloriconredes">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.discord.com" target="_blank">
+                                    <img src="../assets/Icons/icon-discord.svg" alt="discord" width="32"class="coloriconredes">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.facebook.com" target="_blank">
+                                    <img src="../assets/Icons/icon-facebook.svg" alt="facebook" width="32"class="coloriconredes">
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="footer_centro-derechos">
+                        <p>© 2023 <span class="footer_derechostexto">KAZEN</span> | Todos los derechos reservados.</p>                    </div>
+                </div>
+                <div class="col-xs-12 col-md 3 col-lg-4 footer_derecha">
+                    <h3 class="footer_texto-titulo">Navegación</h3>
+                    <ul class="footer_derecha-navegacion">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./rosters.html">Roster</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#">
+                            <img class="coloricontop" src="../assets/Icons/icon-top.svg" alt="top" width="32">
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
