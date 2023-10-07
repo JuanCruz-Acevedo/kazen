@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -35,28 +32,37 @@
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown nav_centro-texto texto-dropdown">
-                            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>Productos</span>
+                                <span>Tienda</span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li"><a class="dropdown-item" href="#">Pro Kit</a>
+                                <li">
+                                    <a class="dropdown-item" href="#">Pro Kit</a>
+                                </li>
+                                <li">
+                                    <a class="dropdown-item" href="#">Lifestyle</a>
+                                </li>
+                                <li">
+                                    <a class="dropdown-item" href="#">Accesorios</a>
+                                </li>
+                                <li">
+                                    <a class="dropdown-item" href="#">Hardware</a>
+                                </li>
+                                <li">
+                                    <a class="dropdown-item" href="./pages/tienda.html">Ver todo</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li"><a class="dropdown-item" href="#">Lifestyle</a></li>
-                            <li"><a class="dropdown-item" href="#">Accesorios</a></li>
-                                <li"><a class="dropdown-item" href="#">Hardware</a></li>
-                                    <li"><a class="dropdown-item" href="./pages/productos.html">Ver todo</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item nav_centro-texto">
-                        <a class="nav-link" href="./pages/rosters.html">Roster</a>
-                    </li>
-                    <li class="nav-item nav_centro-texto">
-                        <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item nav_centro-texto">
-                        <a class="nav-link" href="./pages/contacto.html">Contactos</a>
-                    </li>
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" href="./pages/rosters.html">Roster</a>
+                        </li>
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item nav_centro-texto">
+                            <a class="nav-link" href="./pages/contacto.html">Contactos</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2 texto-input" type="search" placeholder="Buscar..."
@@ -70,13 +76,22 @@
         </nav>
     </header>
     <main class="container-fluid">
-
+        <div class="row">
+            <div class="hero">
+                <img class="heroimagen" src="./assets/img/4.jpg" alt="" width="100%">
+            </div>
+            <div>
+                <div>
+                    <h1>¡Campeones del IEM KATOWICE 2023!</h1>
+                    <p>"¡Testigos de una hazaña legendaria! Nuestro equipo conquistó el torneo mundial de Counter Strike, demostrando su dedicación y destreza incomparables."</p>
+                    <button class="btn btn-primary texto-boton-primario" type="submit">Reviví la emoción</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container-fluid footerbs-gutter-x">
-
-            <div class="row p-5 footer-bg text-white">
-
+            <div class="row p-3 footer-bg text-white">
                 <div class="col-xs-12 col-md 3 col-lg-4 footer_izquierda">
                     <a href="#">
                         <img src="./assets/isotipo.ico" alt="logo">
@@ -89,7 +104,7 @@
                             <li>
                                 <a href="http://www.youtube.com" target="_blank">
                                    <img src="./assets/Icons/icon-youtube.svg" alt="youtube" width="32" class="coloriconredes">
-                                 </a>
+                                </a>
                             </li>
                             <li>
                                 <a href="http://www.twitch.tv" target="_blank">
@@ -120,8 +135,6 @@
                             </li>
                         </div>
                     </ul>
-                    <div class="footer_centro-derechos">
-                        <p>© 2023 <span class="footer_derechostexto">KAZEN</span> | Todos los derechos reservados.</p>                    </div>
                 </div>
                 <div class="col-xs-12 col-md 3 col-lg-4 footer_derecha">
                     <h3 class="footer_texto-titulo">Navegación</h3>
@@ -130,7 +143,7 @@
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="./pages/productos.html">Productos</a>
+                            <a href="./pages/tienda.html">Tienda</a>
                         </li>
                         <li>
                             <a href="./pages/rosters.html">Roster</a>
@@ -148,10 +161,11 @@
                         </a>
                     </div>
                 </div>
+                <div class="footer_centro-derechos">
+                    <p>© 2023 <span class="footer_derechostexto">KAZEN</span> | Todos los derechos reservados.</p>
+                </div>
             </div>
-
         </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

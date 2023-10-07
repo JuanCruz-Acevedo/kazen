@@ -15,6 +15,10 @@
 /* HEADER */
 /* HEADER-CENTRO */
 .navbar {
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
     --bs-emphasis-color: #171717;
     --bs-navbar-padding-y: 1.2rem;
 }
@@ -171,18 +175,17 @@ form{
 } */
 
 /* MAIN */
-/* main {
-    display: inline-flex;
-    background-color: #0F0F0F;
-    margin-bottom: 100vh;
-
-} */
-
+main {
+    
+    padding: 0;
+    margin: 0;
+}
 /* ROSTER */
 .main_roster {
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    margin-top: 9vh;
+    padding: 0;
     background-color: #0f0f0f;
 }
 
@@ -220,10 +223,6 @@ form{
 }
 
 /* --FOOTER-- */
-/* .footerbs-gutter-x {
-    --bs-gutter-x: 0;
-} */
-
 .footer-bg {
     background-color: #171717;
 }
@@ -233,6 +232,7 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 /* FOOTER CENTRO */
@@ -266,8 +266,7 @@ form{
 
 .footer_centro-derechos {
     display: flex;
-    flex-direction: row;
-    margin-top: 60px;
+    flex-direction: column;
 }
 
 .footer_centro-derechos p{
@@ -421,4 +420,64 @@ td {
 
 .card {
     --bs-card-bg: 0;
+}
+
+.heroimagen {
+    clip-path: inset(0 0 220px 0);
+    filter: brightness(50%);
+}
+
+/* --CONTACTO-- */
+.main_contacto {
+    padding-top: 80px;
+    filter: saturate(0) blur(1px);
+    position: absolute;
+    z-index: -1;
+}
+
+.main_contacto-section {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.600);
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.formulariocontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulocontacto {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ED6FBA;
+    padding: 50px 200px 20px 200px;
+}
+
+.textocontacto {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    color: #f2f2f2;
+    padding: 50px 200px 20px 200px;
+    font-size: 20px;
+}
+
+.contacto-boton {
+    background-color: #ED6FBA;
+    border: 2px solid #ED6FBA;
+    border-radius: 6px;
+    color: #FFF;
+}
+
+.contacto-input:focus {
+    outline: 2px solid #eb81c0;
+    box-shadow: 0 0 0 3px white;
 }
