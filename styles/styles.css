@@ -21,6 +21,7 @@
     width: 100vw;
     --bs-emphasis-color: #171717;
     --bs-navbar-padding-y: 1.2rem;
+    height: 90px;
 }
 
 .nav_headerlogo {
@@ -175,11 +176,17 @@ form{
 } */
 
 /* MAIN */
-main {
-    
+/* main {
     padding: 0;
     margin: 0;
+} */
+
+main {
+    padding: 0;
+    margin-top: 90px;
 }
+
+
 /* ROSTER */
 .main_roster {
     display: flex;
@@ -421,23 +428,103 @@ td {
 .card {
     --bs-card-bg: 0;
 }
-
+/* --INDEX-- */
 .heroimagen {
-    clip-path: inset(0 0 220px 0);
+    position: relative;
     filter: brightness(50%);
+}
+
+.hero_superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.index_seleccion-talle:focus {
+    outline: 1px solid #eb81c0;
+    box-shadow: 0 0 0 2px white;
+    border-radius: 2px;
+}
+
+.index_boton-primario {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    color: #FFF;
+    --bs-btn-bg: #ED6FBA;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+    margin-left: 5px;
+}
+
+.index_boton-primario-texto {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    --bs-btn-bg: #ED6FBA;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+    margin-left: 5px;
+}
+
+.card-body-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    height: 120px;
+    background-color: #171717;
+}
+
+.card-body-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    height: 120px;
+    background-color: #171717;
+}
+
+.card-body-bot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    height: 60px;
+    background-color: #171717;
 }
 
 /* --CONTACTO-- */
 .main_contacto {
-    padding-top: 80px;
-    filter: saturate(0) blur(1px);
-    position: absolute;
+    filter: saturate(0) brightness(30%);
+    position: relative;
     z-index: -1;
+}
+
+.contacto_superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
 }
 
 .main_contacto-section {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.600);
     padding: 20px;
     height: 100vh;
     display: flex;
@@ -448,6 +535,7 @@ td {
 }
 
 .formulariocontacto {
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,7 +554,7 @@ td {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     color: #f2f2f2;
-    padding: 50px 200px 20px 200px;
+    padding: 50px 100px 20px 100px;
     font-size: 20px;
 }
 
@@ -480,4 +568,42 @@ td {
 .contacto-input:focus {
     outline: 2px solid #eb81c0;
     box-shadow: 0 0 0 3px white;
+}
+
+/* --SOBRE NOSOTROS-- */
+.main_nosotros {
+    padding-top: 20px;
+    background-color: #0f0f0f;
+}
+
+
+.main_nosotros-texto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.nosotros_redes {
+    text-align: center;
+    list-style: none;
+}
+
+.main_nosotros h3 {
+    font-weight: 700;
+}
+
+.main_nosotros ul {
+    list-style: none;
+}
+
+.nosotros_redes li{
+    display: inline-block;
+    margin-right: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.nosotros_redes a {
+    color: #ED6FBA;
 }
