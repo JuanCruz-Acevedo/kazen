@@ -26,7 +26,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navbar-menuexpande" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                         <li class="nav-item nav_centro-texto">
                             <a class="nav-link" href="../index.html">Home</a>
@@ -76,24 +76,28 @@
         </nav>
     </header>
     <main class="container-fluid main_roster">
-        <section class="row main_roster-seccion">
-            <article class="roster_individual img-fluid col-lg-3 col-md-6 col-sm-6">
-                <img src="../assets/roster/rosterlol.png" alt="roster league of legends">
-            </article>
-            <article class="roster_individual img-fluid col-lg-3 col-md-6 col-sm-6">
-                <img src="../assets/roster/rostercs.png" alt="roster counter strike">
-            </article>
-            <article class="roster_individual img-fluid col-lg-3 col-md-6 col-sm-6">
-                <img src="../assets/roster/rostervalorant.png" alt="roster valorant">
-            </article>
-            <article class="roster_individual img-fluid col-lg-3 col-md-6 col-sm-6">
-                <img src="../assets/roster/rosterfifa.png" alt="roster fifa">
-            </article>
+        <section class="main_roster-seccion">
+            <div class="col-sm-12 col-lg-6 col-md-6 roster-seccion-1">
+                <article class="roster_individual">
+                    <img src="../assets/roster/rosterlol.png" alt="roster league of legends">
+                </article>
+                <article class="roster_individual">
+                    <img src="../assets/roster/rostercs.png" alt="roster counter strike">
+                </article>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6 roster-seccion-2">
+                <article class="roster_individual">
+                    <img src="../assets/roster/rostervalorant.png" alt="roster valorant">
+                </article>
+                <article class="roster_individual">
+                    <img src="../assets/roster/rosterfifa.png" alt="roster fifa">
+                </article>
+            </div>
         </section>
         <section class="noticias-calendario">
-            <div class="row seccion_noti-cal">
+            <div class="seccion_noti-cal">
                 <article class="noticias col-lg-6 col-md-6 col-sm-12s mb-4">
-                    <div class="card bordecolor col-lg-4 col-md-4 col-sm-12" style="width: 18rem;">
+                    <div class="card bordecolor col-lg-4 col-md-4 col-sm-12" >
                         <img src="../assets/img/1.jpg" class="card-img-top img-fluid" alt="noticia1">
                         <div class="card-body">
                             <h5 class="card-title" style="font-weight: 700; font-family: 'Titillium Web', sans-serif;">¡Presentamos a nuestro nuevo equipo de Valorant!</h5>
@@ -101,7 +105,7 @@
                             <a href="#" class="btn btn-primary texto-boton-primario">Leer más</a>
                         </div>
                     </div>
-                    <div class="card bordecolor col-lg-4 col-md-4 col-sm-12" style="width: 18rem;">
+                    <div class="card bordecolor col-lg-4 col-md-4 col-sm-12">
                         <img src="../assets/img/2.jpg" class="card-img-top img-fluid" alt="noticia2">
                         <div class="card-body">
                             <h5 class="card-title" style="font-weight: 700; font-family: 'Titillium Web', sans-serif;" >¡Pasión y determinación en el IEM de Counter Strike!</h5>
@@ -109,7 +113,7 @@
                             <a href="#" class="btn btn-primary texto-boton-primario">Leer más</a>
                         </div>
                     </div>
-                    <div class="card bordecolor col-lg-4 col-md-4 col-sm-12" style="width: 18rem;">
+                    <div class="card bordecolor col-lg-4 col-md-4 col-sm-12">
                         <img src="../assets/img/3.png" class="card-img-top img-fluid" alt="noticia3">
                         <div class="card-body">
                             <h5 class="card-title" style="font-weight: 700; font-family: 'Titillium Web', sans-serif;">¡Imparables en la nueva Liga de League of Legends!</h5>
@@ -119,8 +123,8 @@
                         </div>
                     </div>
                 </article>
-                <article class="calendario col-lg-6 col-md-6 col-sm-12">
-                    <h2 style="margin-top: 80px;">Calendario de enfrentamientos</h2>
+                <article class="calendario">
+                    <h2>Calendario de enfrentamientos</h2>
                     <div>
                         <table>
                             <thead>
