@@ -1,0 +1,262 @@
+/* HEADER-CENTRO */
+.navbar {
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    --bs-emphasis-color: #171717;
+    --bs-navbar-padding-y: 1.2rem;
+    height: 90px;
+}
+
+.nav_headerlogo {
+    margin-left: 6rem;
+    &:active {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(147%) hue-rotate(161deg) brightness(88%) contrast(82%);
+    }
+}
+
+.nav_centro-texto a {
+    color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link {
+    &:focus{
+        color: #ED6FBA;
+    }
+    &:hover {
+        color: #ffb2e0;
+    }
+    &:active {
+        color: #ee56b1;
+    }
+}
+
+.nav-link[aria-current="page"] {
+    color: #ED6FBA;
+}
+
+.nav-item.dropdown:focus-within .nav-link {
+    color: #ffb2e0;
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: #171717;
+    --bs-dropdown-item-padding-x: 1rem;
+    --bs-dropdown-link-color: #ED6FBA;
+    --bs-dropdown-link-hover-color: #fff;
+    --bs-dropdown-link-hover-bg: #ED6FBA;
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: #ee56b1;
+    --bs-dropdown-min-width: 6rem;
+    --bs-dropdown-item-padding-x: 0.5rem;
+}
+
+/* No creo que width sea lo mejor ya que no es exacto, pero no encontre otra forma de acortar el ancho del hover en el item del drop menu */
+.dropdown-item {
+    width: 92%;
+}
+
+ .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* HEADER-DERECHA */
+form{
+    margin-right: 6rem;
+}
+
+.form-control {
+    --bs-border-color: #eb81c0;
+    &:focus {
+        border-color: #ED6FBA;
+        box-shadow: 0 0 0 0.20rem rgba(243, 125, 190, 0.664);
+    }
+}
+
+.texto-input {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.texto-boton-primario {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    --bs-btn-bg: #ED6FBA;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+    margin-left: 5px;
+}
+
+.texto-boton-secundario {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: small;
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+}
+
+@media (max-width: 1278px){
+    .nav_centro-texto a {
+        font-size: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .nav_headerlogo {
+        margin-left: 4rem;
+    }
+    form{
+        margin-right: 4rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .navbar-expand-lg {
+        max-width: 100%;
+    }
+
+       .nav_headerlogo {
+        margin-left: 3rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 3rem;
+        color: #ED6FBA;
+        border: 2px solid ;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(237, 111, 186)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .navbar-menuexpande {
+        background-color: #171717;
+        padding: 20px;
+    }
+
+    .navbar-menuexpande form {
+        gap: 10px;
+    }
+
+    .navbar-menuexpande button {
+        width: 250px;
+    }
+
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .texto-boton-primario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: medium;
+        --bs-btn-bg: #ED6FBA;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-color: #FFF;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+        margin-left: 5px;
+    }
+    
+    .texto-boton-secundario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: small;
+        --bs-btn-color: #fff;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar {
+        --bs-navbar-padding-y: 0;
+    }
+    .nav_headerlogo {
+        content: url(../assets/isotipo.ico);
+        width: 80px;
+        margin-left: 3rem;
+    }
+    .navbar-toggler {
+        margin-right: 3rem;
+        color: #ED6FBA;
+        border: 2px solid ;
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(237, 111, 186)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+      .navbar-menuexpande {
+        background-color: #171717;
+        padding: 20px;
+      }
+      .navbar-menuexpande form {
+        gap: 10px;
+      }
+      .navbar-menuexpande button {
+        width: 250px;
+      }
+
+      .d-flex {
+        flex-wrap: wrap;
+      }
+
+      .texto-boton-primario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: medium;
+        --bs-btn-bg: #ED6FBA;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-color: #FFF;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+        margin-left: 5px;
+    }
+    
+    .texto-boton-secundario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: small;
+        --bs-btn-color: #fff;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+    }
+}

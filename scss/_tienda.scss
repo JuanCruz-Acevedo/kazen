@@ -1,0 +1,28 @@
+.card-body-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    height: 120px;
+    background-color: #171717;
+}
+
+.card-body-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    height: 120px;
+    background-color: #171717;
+}
+
+.card-body-bot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    height: 60px;
+    background-color: #171717;
+}

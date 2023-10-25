@@ -1,0 +1,171 @@
+.footer-bg {
+    background-color: #171717;
+}
+
+/* FOOTER IZQUIERDA */
+.footer_izquierda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER CENTRO */
+ .footer_centro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer_texto-titulo {
+    text-align: center;
+    color: #ed6fba;
+}
+
+.footer_iconosredes{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer_iconosredes-x {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/* FOOTER DERECHA */
+.footer_derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer_derecha-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer_derecha-navegacion a {
+    color: #f2f2f2;
+    text-decoration: none;
+    &:hover{
+        color: #ed6fba;
+    }
+    &:active{
+        color: #ee56b1;
+    }
+}
+
+/* FOOTER INFERIOR - Derechos */
+.footer_centro-derechos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer_centro-derechos p{
+    text-align: center;
+    margin: 0px;
+}
+
+.footer_derechostexto {
+    color: #ed6fba;
+    font-weight: 700;
+}
+
+/* FOOTER ICONOS COLORES */
+.coloriconredes {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(6879%) hue-rotate(200deg) brightness(122%) contrast(90%);
+    margin: 0;
+    padding: 0;
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(59%) sepia(61%) saturate(1379%) hue-rotate(290deg) brightness(101%) contrast(86%);
+    }
+    &:active {
+        filter: brightness(0) saturate(100%) invert(65%) sepia(28%) saturate(712%) hue-rotate(276deg) brightness(98%) contrast(87%);
+    }
+}
+
+.coloricontop {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(61%) saturate(1379%) hue-rotate(290deg) brightness(101%) contrast(86%);
+    margin: 0;
+    padding: 0;
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(6879%) hue-rotate(200deg) brightness(122%) contrast(90%);
+    }
+    &:active {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(147%) hue-rotate(161deg) brightness(88%) contrast(82%);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .footer-bg {
+        background-color: #171717;
+    }
+    
+    /* FOOTER-IZQUIERDA */
+    .footer_izquierda {
+
+        img {
+            width: 150px;
+        }
+    }
+
+    /* FOOTER-CENTRO */
+    .footer_centro {
+        gap: 0px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .footer_texto-titulo {
+        margin-bottom: 20px;
+    }
+    
+    .footer_iconosredes{
+        gap: 15px;
+    }
+    
+    .footer_iconosredes-x {
+        gap: 30px;
+    }
+
+    // /* FOOTER-DERECHA */
+    .footer_derecha {
+        gap: 0;
+    }
+    .footer_derecha ul {
+        margin-bottom: 20xp;
+        padding: 0;
+    }
+
+    /* FOOTER-DERECHOS */
+    .footer_centro-derechos {
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    .footer_centro-derechos p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .footer_derechostexto {
+        color: #ed6fba;
+        font-weight: 700;
+    }
+
+}

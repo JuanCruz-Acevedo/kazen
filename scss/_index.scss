@@ -1,0 +1,48 @@
+.heroimagen {
+    position: relative;
+    filter: brightness(50%);
+}
+
+.hero_superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.index_seleccion-talle:focus {
+    outline: 1px solid #eb81c0;
+    box-shadow: 0 0 0 2px white;
+    border-radius: 2px;
+}
+
+.index_boton-primario {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    color: #FFF;
+    --bs-btn-bg: #ED6FBA;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+    margin-left: 5px;
+}
+
+.index_boton-primario-texto {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    --bs-btn-bg: #ED6FBA;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+    margin-left: 5px;
+}

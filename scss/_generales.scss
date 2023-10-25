@@ -1,0 +1,14 @@
+main {
+    padding: 0;
+    margin-top: 90px;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0rem;
+}
