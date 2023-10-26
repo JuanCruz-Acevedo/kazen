@@ -1,3 +1,88 @@
+.tienda_h1 {
+    text-align: center;
+    color: #ED6FBA;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.tienda_productos {
+    display: flex;
+    justify-content: center;
+}
+
+.tienda_card-titulo {
+    text-align: center;
+}
+
+.tienda_card-detalles {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: #eb81c0;
+    font-weight: 700;
+}
+
+.tienda_card-talles {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Titillium Web',sans-serif;
+    font-size: 20px;
+    gap: 80px;
+    p {
+        margin: 0;
+        padding: 0;
+        color: #ED6FBA;
+        font-weight: 500;
+    }
+}
+
+.tienda_seleccion-talle {
+    width: 85px;
+    cursor: pointer;
+    &:focus {
+        outline: 1px solid #eb81c0;
+        box-shadow: 0 0 0 2px white;
+        border-radius: 2px;
+    }
+}
+
+.tienda_card-colores {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Titillium Web',sans-serif;
+    font-size: 20px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.tienda_card-colores-texto {
+    margin: 0;
+    padding: 0;
+    color: #ED6FBA;
+    font-weight: 500;
+}
+
+.tienda_card-unidad {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Titillium Web',sans-serif;
+    font-size: 20px;
+    gap: 70px;
+    p {
+        margin: 0;
+        padding: 0;
+        color: #ED6FBA;
+        font-weight: 500;
+    }
+}
+
+.tienda_card-lista {
+    list-style: none;
+    background-color: #171717;
+}
+
 .card-body-top {
     display: flex;
     flex-direction: column;
@@ -25,4 +110,254 @@
     color: #FFF;
     height: 60px;
     background-color: #171717;
+    gap: 15px;
+}
+
+.tienda_boton-primario {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    color: #FFF;
+    --bs-btn-bg: #ED6FBA;
+    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #eb81c0;
+    --bs-btn-hover-border-color: #eb6cb8;
+    --bs-btn-active-bg: #ee56b1;
+    --bs-btn-active-border-color: #ee56b1;
+    margin: 0px;
+}
+
+@media (max-width: 1180px) {
+    .card-body-bot {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        height: 100px;
+        background-color: #171717;
+        gap: 10px;
+    }
+    .tienda_boton-primario {
+        font-size: small;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .card {
+        max-width: 150px;
+    }
+    .card-body-top {
+        height: 150px;
+        padding: 0 10px;
+    }
+
+    .tienda_productos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-body-center {
+        height: 180px;
+    }
+    .tienda_card-lista {
+        max-width: 100%;
+        list-style: none;
+        background-color: #171717;
+    }
+    .tienda_card-talles {
+        font-size: 18px;
+        gap: 20px;
+    }
+    .tienda_seleccion-talle {
+        width: 45px;
+        cursor: pointer;
+        &:focus {
+            outline: 1px solid #eb81c0;
+            box-shadow: 0 0 0 2px white;
+            border-radius: 2px;
+        }
+    }
+    .tienda_card-colores {
+        display: inline-flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        font-family: 'Titillium Web',sans-serif;
+        font-size: 18px;
+        gap: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .tienda_card-unidad {
+        font-size: 18px;
+        gap: 10px;
+    }
+    .tienda_boton-primario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFF;
+        --bs-btn-bg: #ED6FBA;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-color: #FFF;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+        padding: 0px;
+    }
+    .texto-boton-secundario {
+        font-size: 10px;
+    }
+    .card-body-bot {
+        gap: 2px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 150px;
+    }
+    .card-body-top {
+        height: 150px;
+        padding: 0 10px;
+    }
+
+    .tienda_productos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-body-center {
+        height: 180px;
+    }
+    .tienda_card-lista {
+        max-width: 100%;
+        list-style: none;
+        background-color: #171717;
+    }
+    .tienda_card-talles {
+        font-size: 18px;
+        gap: 20px;
+    }
+    .tienda_seleccion-talle {
+        width: 45px;
+        cursor: pointer;
+        &:focus {
+            outline: 1px solid #eb81c0;
+            box-shadow: 0 0 0 2px white;
+            border-radius: 2px;
+        }
+    }
+    .tienda_card-colores {
+        display: inline-flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        font-family: 'Titillium Web',sans-serif;
+        font-size: 18px;
+        gap: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .tienda_card-unidad {
+        font-size: 18px;
+        gap: 10px;
+    }
+    .tienda_boton-primario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFF;
+        --bs-btn-bg: #ED6FBA;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-color: #FFF;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+        padding: 0px;
+    }
+    .texto-boton-secundario {
+        font-size: 10px;
+    }
+    .card-body-bot {
+        gap: 2px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        max-width: 150px;
+    }
+    .card-body-top {
+        height: 150px;
+        padding: 0 10px;
+    }
+
+    .tienda_productos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-body-center {
+        height: 180px;
+    }
+    .tienda_card-lista {
+        max-width: 100%;
+        list-style: none;
+        background-color: #171717;
+    }
+    .tienda_card-talles {
+        font-size: 18px;
+        gap: 20px;
+    }
+    .tienda_seleccion-talle {
+        width: 45px;
+        cursor: pointer;
+        &:focus {
+            outline: 1px solid #eb81c0;
+            box-shadow: 0 0 0 2px white;
+            border-radius: 2px;
+        }
+    }
+    .tienda_card-colores {
+        display: inline-flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        font-family: 'Titillium Web',sans-serif;
+        font-size: 18px;
+        gap: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .tienda_card-unidad {
+        font-size: 18px;
+        gap: 10px;
+    }
+    .tienda_boton-primario {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFF;
+        --bs-btn-bg: #ED6FBA;
+        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-hover-color: #FFF;
+        --bs-btn-hover-bg: #eb81c0;
+        --bs-btn-hover-border-color: #eb6cb8;
+        --bs-btn-active-bg: #ee56b1;
+        --bs-btn-active-border-color: #ee56b1;
+        padding: 0px;
+    }
+    .texto-boton-secundario {
+        font-size: 10px;
+    }
+    .card-body-bot {
+        gap: 2px;
+    }
 }

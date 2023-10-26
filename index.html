@@ -77,21 +77,41 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid main_index">
         <div class="row" style="background-color: #0f0f0f;">
             <div class="hero">
-                <img class="heroimagen" src="./assets/img4.jpg" alt="" width="100%">
+                <img class="heroimagen" src="./assets/img4.jpg" alt="">
             </div>
             <div class="hero_superpuesto">
-                <h1 style="color: #ffffff;">¡Campeones del IEM KATOWICE 2023!</h1>
-                <p style="margin: 40px 500px 0 500px; font-size: 20px ;">¡Testigos de una hazaña legendaria! Nuestro
+                <h1>¡Campeones del IEM KATOWICE 2023!</h1>
+                <p class="texto-hero">¡Testigos de una hazaña legendaria! Nuestro
                     equipo conquistó el torneo mundial de Counter Strike, demostrando su dedicación y destreza
                     incomparables.</p>
-                <button style="margin-top: 50px ;" class="btn btn-primary texto-boton-primario" type="submit">Reviví la
+                <button class="btn btn-primary index_boton-primario" type="submit">Reviví la
                     emoción</button>
             </div>
         </div>
-        <section class="container-fluid" style="display: flex; background-color: #ED6FBA; height: 80px;">
+        <div>
+            <h2 class="index_titulo">Conoce a nuestros jugadores</h2>
+            <h3 class="index_sub">Seguí al día con las novedades y calendario del equipo</h3>
+            <section>
+                <article class="index_cards-general">
+                    <a href="./pages/rosters.html">
+                        <div class="index_cards1">
+                            <p class="index_cards-texto">Nuestros equipos</p>
+                            <button class="btn btn-primary index_cards-boton">¡Conocelos!</button>
+                        </div>
+                    </a>
+                    <a href="./pages/rosters.html">
+                        <div class="index_cards2">
+                            <p class="index_cards-texto">Noticias</p>
+                            <button class="btn btn-primary index_cards-boton">Ver más</button>
+                        </div>
+                    </a>
+                </article>
+        </div>
+        </section>
+        <section class="container-fluid" style="display: flex; background-color: #ED6FBA; height: 80px; margin-top: 2rem; margin-bottom: 2remx">
             <ul style="list-style: none; display: inline-flex; margin-left:-60px; margin-bottom:0px ; padding: 0; align-items: center; gap: 60px; overflow: hidden;">
                 <li><img src="./assets/nvidialogo.svg" alt="nvidia"></li>
                 <li><img src="./assets/cocacolalogo.svg" alt="cocacola"></li>
@@ -107,6 +127,23 @@
                 <li><img src="./assets/redbulllogo.svg" alt="redbull"></li>
                 <li><img src="./assets/nvidialogo.svg" alt="nvidia"></li>
             </ul>
+        </section>
+        <h2 class="index_titulo">Viste y juega como un profesional</h2>
+        <h3 class="index_sub">Tienda KAZEN eSports</h3>
+        <section class="index_imagenes-general">
+            <div class="index_imagenes-1">
+                <a href="./pages/tienda.html">
+                    <img class="index_imagen-1" src="./assets/index1.png" alt="">
+                </a>
+                <a href="./pages/tienda.html">
+                    <img class="index_imagen-2" src="./assets/index2.png" alt="">
+                </a>
+            </div>
+            <div class="index_imagenes-2">
+                <a href="./pages/tienda.html">
+                    <img src="./assets/index3.png" alt="">
+                </a>
+            </div>
         </section>
     </main>
     <footer>

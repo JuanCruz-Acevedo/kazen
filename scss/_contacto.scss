@@ -1,7 +1,6 @@
 .main_contacto {
     filter: saturate(0) brightness(30%);
     position: relative;
-    width: 100vw;
     height: 100vh;
     background-image: url(../assets/contacto.jpg);
     background-size: cover;
@@ -132,8 +131,8 @@
     .main_contacto {
         filter: saturate(0) brightness(30%);
         position: relative;
-        width: 100vw;
         height: 120vh;
+        width: 100vw;
         background-image: url(../assets/contacto.jpg);
         background-size: cover;
         background-position: center;
