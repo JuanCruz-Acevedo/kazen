@@ -1,10 +1,10 @@
-main {
+.main_error {
     position: relative;
     margin-top: 90px;
     min-height: 100vh;
 }
 
-main::before {
+.main_error::before {
     content: "";
     position: absolute;
     top: 0;
