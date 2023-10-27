@@ -45,13 +45,14 @@
     font-family: $fuente-principal;
     font-weight: 700;
     font-size:x-large;
-    --bs-btn-bg: $color-rosa_principal;
-    --bs-btn-border-color: $color-rosa_principal;
+    --bs-btn-bg: #ed6fba;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-color: #FFF;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
     --bs-btn-active-bg: #ee56b1;
     --bs-btn-active-border-color: #ee56b1;
+    z-index: 1;
     a {
         color: $color-blanco;
         text-decoration: none;
@@ -121,8 +122,8 @@
         font-family: $fuente-principal;
         font-weight: 700;
         font-size:large;
-        --bs-btn-bg: $color-rosa_principal;
-        --bs-btn-border-color: $color-rosa_principal;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
@@ -171,8 +172,8 @@
         font-family: $fuente-principal;
         font-weight: 700;
         font-size: medium;
-        --bs-btn-bg: $color-rosa_principal;
-        --bs-btn-border-color: $color-rosa_principal;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
@@ -220,8 +221,8 @@
         font-family: $fuente-principal;
         font-weight: 700;
         font-size:small;
-        --bs-btn-bg: $color-rosa_principal;
-        --bs-btn-border-color: $color-rosa_principal;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;

@@ -2457,13 +2457,14 @@ td {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: x-large;
-  --bs-btn-bg: $color-rosa_principal;
-  --bs-btn-border-color: $color-rosa_principal;
+  --bs-btn-bg: #ed6fba;
+  --bs-btn-border-color: #ed6fba;
   --bs-btn-hover-color: #FFF;
   --bs-btn-hover-bg: #eb81c0;
   --bs-btn-hover-border-color: #eb6cb8;
   --bs-btn-active-bg: #ee56b1;
   --bs-btn-active-border-color: #ee56b1;
+  z-index: 1;
 }
 .error_boton a {
   color: #f2f2f2;
@@ -2531,8 +2532,8 @@ td {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: large;
-    --bs-btn-bg: $color-rosa_principal;
-    --bs-btn-border-color: $color-rosa_principal;
+    --bs-btn-bg: #ed6fba;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-color: #FFF;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
@@ -2578,8 +2579,8 @@ td {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: medium;
-    --bs-btn-bg: $color-rosa_principal;
-    --bs-btn-border-color: $color-rosa_principal;
+    --bs-btn-bg: #ed6fba;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-color: #FFF;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
@@ -2625,8 +2626,8 @@ td {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: small;
-    --bs-btn-bg: $color-rosa_principal;
-    --bs-btn-border-color: $color-rosa_principal;
+    --bs-btn-bg: #ed6fba;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-color: #FFF;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
