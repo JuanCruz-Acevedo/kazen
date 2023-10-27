@@ -52,11 +52,7 @@
     --bs-btn-hover-border-color: #eb6cb8;
     --bs-btn-active-bg: #ee56b1;
     --bs-btn-active-border-color: #ee56b1;
-    z-index: 1;
-    a {
-        color: $color-blanco;
-        text-decoration: none;
-    }
+    z-index: 2;
 }
 
 .numeros-variantes {
@@ -129,10 +125,7 @@
         --bs-btn-hover-border-color: #eb6cb8;
         --bs-btn-active-bg: #ee56b1;
         --bs-btn-active-border-color: #ee56b1;
-        a {
-            color: $color-blanco;
-            text-decoration: none;
-        }
+        z-index: 2;
     }
 }
 
@@ -179,10 +172,7 @@
         --bs-btn-hover-border-color: #eb6cb8;
         --bs-btn-active-bg: #ee56b1;
         --bs-btn-active-border-color: #ee56b1;
-        a {
-            color: $color-blanco;
-            text-decoration: none;
-        }
+        z-index: 2;
     }
 }
 
@@ -228,9 +218,6 @@
         --bs-btn-hover-border-color: #eb6cb8;
         --bs-btn-active-bg: #ee56b1;
         --bs-btn-active-border-color: #ee56b1;
-        a {
-            color: $color-blanco;
-            text-decoration: none;
-        }
+        z-index: 2;
     }
 }

@@ -2464,11 +2464,7 @@ td {
   --bs-btn-hover-border-color: #eb6cb8;
   --bs-btn-active-bg: #ee56b1;
   --bs-btn-active-border-color: #ee56b1;
-  z-index: 1;
-}
-.error_boton a {
-  color: #f2f2f2;
-  text-decoration: none;
+  z-index: 2;
 }
 
 .numeros-variantes {
@@ -2539,10 +2535,7 @@ td {
     --bs-btn-hover-border-color: #eb6cb8;
     --bs-btn-active-bg: #ee56b1;
     --bs-btn-active-border-color: #ee56b1;
-  }
-  .error_boton a {
-    color: #f2f2f2;
-    text-decoration: none;
+    z-index: 2;
   }
 }
 @media (max-width: 576px) {
@@ -2586,10 +2579,7 @@ td {
     --bs-btn-hover-border-color: #eb6cb8;
     --bs-btn-active-bg: #ee56b1;
     --bs-btn-active-border-color: #ee56b1;
-  }
-  .error_boton a {
-    color: #f2f2f2;
-    text-decoration: none;
+    z-index: 2;
   }
 }
 @media (max-width: 320px) {
@@ -2633,10 +2623,7 @@ td {
     --bs-btn-hover-border-color: #eb6cb8;
     --bs-btn-active-bg: #ee56b1;
     --bs-btn-active-border-color: #ee56b1;
-  }
-  .error_boton a {
-    color: #f2f2f2;
-    text-decoration: none;
+    z-index: 2;
   }
 }
 
