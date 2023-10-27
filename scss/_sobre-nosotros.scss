@@ -43,16 +43,16 @@
 
 @media (min-width: 992px) {
     .main_nosotros-texto-h1 {
-        font-family: 'Raleway',sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         text-align: center;
-        color: #ED6FBA ;
+        color: $color-rosa_principal;
     }
     
     .main_nosotros {
-            background-color: #0f0f0f;
-            color: #f2f2f2;
-            font-family: 'Titillium Web',sans-serif;
+            background-color: $color-bg;
+            color: $color-blanco;
+            font-family: $fuente-secundaria;
             padding: 50px 250px;
     }
     
@@ -76,10 +76,10 @@
     }
     
     .main_nosotros-texto-h1 {
-            font-family: 'Raleway',sans-serif;
+            font-family: $fuente-principal;
             font-weight: 700;
             text-align: center;
-            color: #ED6FBA ;
+            color: $color-rosa_principal;
     }
     
     .main_nosotros-texto-redes {
@@ -97,9 +97,9 @@
 
 @media (min-width: 577px) and (max-width: 991px) {
     .main_nosotros {
-        background-color: #0f0f0f;
-        color: #f2f2f2;
-        font-family: 'Titillium Web',sans-serif;
+        background-color: $color-bg;
+        color: $color-blanco;
+        font-family: $fuente-secundaria;
         padding: 50px 100px;
     }
     .main_nosotros-texto {
@@ -119,10 +119,10 @@
         padding: 0;
     }
     .main_nosotros-texto-h1 {
-        font-family: 'Raleway',sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         text-align: center;
-        color: #ED6FBA ;
+        color: $color-rosa_principal;
     }
     .main_nosotros-texto-redes {
         display: flex;
@@ -139,9 +139,9 @@
 
 @media (max-width: 576px) {
     .main_nosotros {
-        background-color: #0f0f0f;
-        color: #f2f2f2;
-        font-family: 'Titillium Web',sans-serif;
+        background-color: $color-bg;
+        color: $color-blanco;
+        font-family: $fuente-secundaria;
         padding: 50px;
     }
     .main_nosotros-texto {
@@ -161,10 +161,10 @@
         padding: 0;
     }
     .main_nosotros-texto-h1 {
-        font-family: 'Raleway',sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         text-align: center;
-        color: #ED6FBA ;
+        color: $color-rosa_principal;
     }
     .main_nosotros-texto-redes {
         display: flex;

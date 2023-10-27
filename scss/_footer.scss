@@ -1,5 +1,5 @@
 .footer-bg {
-    background-color: #171717;
+    background-color: $color-header_footer;
 }
 
 /* FOOTER IZQUIERDA */
@@ -20,7 +20,7 @@
 
 .footer_texto-titulo {
     text-align: center;
-    color: #ed6fba;
+    color: $color-rosa_principal;
 }
 
 .footer_iconosredes{
@@ -51,17 +51,17 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    font-family: 'Raleway', sans-serif;
+    font-family: $fuente-principal;
     list-style: none;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
 .footer_derecha-navegacion a {
-    color: #f2f2f2;
+    color: $color-blanco;
     text-decoration: none;
     &:hover{
-        color: #ed6fba;
+        color: $color-rosa_principal;
     }
     &:active{
         color: #ee56b1;
@@ -81,7 +81,7 @@
 }
 
 .footer_derechostexto {
-    color: #ed6fba;
+    color: $color-rosa_principal;
     font-weight: 700;
 }
 
@@ -113,7 +113,7 @@
 
 @media (max-width: 576px) {
     .footer-bg {
-        background-color: #171717;
+        background-color: $color-header_footer;
     }
     
     /* FOOTER-IZQUIERDA */
@@ -164,7 +164,7 @@
     }
     
     .footer_derechostexto {
-        color: #ed6fba;
+        color: $color-rosa_principal;
         font-weight: 700;
     }
 

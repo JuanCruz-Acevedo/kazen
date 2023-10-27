@@ -1,7 +1,7 @@
 .tienda_h1 {
     text-align: center;
-    color: #ED6FBA;
-    font-family: 'Raleway',sans-serif;
+    color: $color-rosa_principal;
+    font-family: $fuente-principal;
     font-weight: 700;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -27,13 +27,13 @@
 .tienda_card-talles {
     display: inline-flex;
     align-items: center;
-    font-family: 'Titillium Web',sans-serif;
+    font-family: $fuente-secundaria;
     font-size: 20px;
     gap: 80px;
     p {
         margin: 0;
         padding: 0;
-        color: #ED6FBA;
+        color: $color-rosa_principal;
         font-weight: 500;
     }
 }
@@ -51,7 +51,7 @@
 .tienda_card-colores {
     display: inline-flex;
     align-items: center;
-    font-family: 'Titillium Web',sans-serif;
+    font-family: $fuente-secundaria;
     font-size: 20px;
     gap: 15px;
     cursor: pointer;
@@ -60,27 +60,27 @@
 .tienda_card-colores-texto {
     margin: 0;
     padding: 0;
-    color: #ED6FBA;
+    color: $color-rosa_principal;
     font-weight: 500;
 }
 
 .tienda_card-unidad {
     display: inline-flex;
     align-items: center;
-    font-family: 'Titillium Web',sans-serif;
+    font-family: $fuente-secundaria;
     font-size: 20px;
     gap: 70px;
     p {
         margin: 0;
         padding: 0;
-        color: #ED6FBA;
+        color: $color-rosa_principal;
         font-weight: 500;
     }
 }
 
 .tienda_card-lista {
     list-style: none;
-    background-color: #171717;
+    background-color: $color-header_footer;
 }
 
 .card-body-top {
@@ -90,7 +90,7 @@
     justify-content: center;
     color: #FFF;
     height: 120px;
-    background-color: #171717;
+    background-color: $color-header_footer;
 }
 
 .card-body-center {
@@ -100,7 +100,7 @@
     justify-content: center;
     color: #FFF;
     height: 120px;
-    background-color: #171717;
+    background-color: $color-header_footer;
 }
 
 .card-body-bot {
@@ -109,17 +109,17 @@
     justify-content: center;
     color: #FFF;
     height: 60px;
-    background-color: #171717;
+    background-color: $color-header_footer;
     gap: 15px;
 }
 
 .tienda_boton-primario {
-    font-family: "Raleway", sans-serif;
+    font-family: $fuente-principal;
     font-weight: 700;
     font-size: medium;
     color: #FFF;
-    --bs-btn-bg: #ED6FBA;
-    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-bg: #ed6fba;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-color: #FFF;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
@@ -135,7 +135,7 @@
         justify-content: center;
         color: #FFF;
         height: 100px;
-        background-color: #171717;
+        background-color: $color-header_footer;
         gap: 10px;
     }
     .tienda_boton-primario {
@@ -164,7 +164,7 @@
     .tienda_card-lista {
         max-width: 100%;
         list-style: none;
-        background-color: #171717;
+        background-color: $color-header_footer;
     }
     .tienda_card-talles {
         font-size: 18px;
@@ -184,7 +184,7 @@
         justify-content: start;
         flex-direction: column;
         align-items: start;
-        font-family: 'Titillium Web',sans-serif;
+        font-family: $fuente-secundaria;
         font-size: 18px;
         gap: 0px;
         margin-top: 5px;
@@ -195,12 +195,12 @@
         gap: 10px;
     }
     .tienda_boton-primario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 500;
         font-size: 12px;
         color: #FFF;
-        --bs-btn-bg: #ED6FBA;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
@@ -237,7 +237,7 @@
     .tienda_card-lista {
         max-width: 100%;
         list-style: none;
-        background-color: #171717;
+        background-color: $color-header_footer;
     }
     .tienda_card-talles {
         font-size: 18px;
@@ -257,7 +257,7 @@
         justify-content: start;
         flex-direction: column;
         align-items: start;
-        font-family: 'Titillium Web',sans-serif;
+        font-family: $fuente-secundaria;
         font-size: 18px;
         gap: 0px;
         margin-top: 5px;
@@ -268,12 +268,12 @@
         gap: 10px;
     }
     .tienda_boton-primario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 500;
         font-size: 12px;
         color: #FFF;
-        --bs-btn-bg: #ED6FBA;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
@@ -310,7 +310,7 @@
     .tienda_card-lista {
         max-width: 100%;
         list-style: none;
-        background-color: #171717;
+        background-color: $color-header_footer;
     }
     .tienda_card-talles {
         font-size: 18px;
@@ -330,7 +330,7 @@
         justify-content: start;
         flex-direction: column;
         align-items: start;
-        font-family: 'Titillium Web',sans-serif;
+        font-family: $fuente-secundaria;
         font-size: 18px;
         gap: 0px;
         margin-top: 5px;
@@ -341,12 +341,12 @@
         gap: 10px;
     }
     .tienda_boton-primario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 500;
         font-size: 12px;
         color: #FFF;
-        --bs-btn-bg: #ED6FBA;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;

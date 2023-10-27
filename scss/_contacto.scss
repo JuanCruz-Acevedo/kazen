@@ -2,7 +2,7 @@
     filter: saturate(0) brightness(30%);
     position: relative;
     height: 100vh;
-    background-image: url(../assets/contacto.jpg);
+    background-image: url(../assets/contacto.webp);
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -36,24 +36,24 @@
 }
 
 .titulocontacto {
-    font-family: 'Raleway',sans-serif;
+    font-family: $fuente-principal;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #ED6FBA;
+    color: $color-rosa_principal;
     padding: 50px 200px 20px 200px;
 }
 
 .textocontacto {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: $fuente-secundaria;
     font-weight: 400;
-    color: #f2f2f2;
+    color: $color-blanco;
     padding: 5px 200px 20px 200px;
     font-size: 20px;
 }
 
 .contacto-boton {
-    background-color: #ED6FBA;
-    border: 2px solid #ED6FBA;
+    background-color: $color-rosa_principal;
+    border: 2px solid $color-rosa_principal;
     border-radius: 6px;
     color: #FFF;
 }
@@ -66,9 +66,9 @@
 
 @media (min-width: 577px) and (max-width: 991px) {
     .textocontacto {
-        font-family: 'Titillium Web', sans-serif;
+        font-family: $fuente-secundaria;
         font-weight: 400;
-        color: #f2f2f2;
+        color: $color-blanco;
         padding: 5px 50px 20px 50px;
         font-size: 18px;
     }
@@ -80,7 +80,7 @@
         position: relative;
         width: 100vw;
         height: 120vh;
-        background-image: url(../assets/contacto.jpg);
+        background-image: url(../assets/contacto.webp);
         background-size: cover;
         background-position: center;
         z-index: 1;
@@ -97,16 +97,16 @@
         z-index: 2;
     }
     .titulocontacto {
-        font-family: 'Raleway',sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         margin-bottom: 0px;
-        color: #ED6FBA;
+        color: $color-rosa_principal;
         padding: 50px 0px 0px 0px;
     }
     .textocontacto {
-        font-family: 'Titillium Web', sans-serif;
+        font-family: $fuente-secundaria;
         font-weight: 400;
-        color: #f2f2f2;
+        color: $color-blanco;
         padding: 50px 50px 20px 50px;
         font-size: 18px;
     }
@@ -133,16 +133,16 @@
         position: relative;
         height: 120vh;
         width: 100vw;
-        background-image: url(../assets/contacto.jpg);
+        background-image: url(../assets/contacto.webp);
         background-size: cover;
         background-position: center;
         z-index: 1;
     }
     .titulocontacto {
-        font-family: 'Raleway',sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         margin-bottom: 0px;
-        color: #ED6FBA;
+        color: $color-rosa_principal;
         padding: 250px 0px 20px 0px;
     }
     .contacto_superpuesto {
@@ -157,9 +157,9 @@
         z-index: 2;
     }
     .textocontacto {
-        font-family: 'Titillium Web', sans-serif;
+        font-family: $fuente-secundaria;
         font-weight: 400;
-        color: #f2f2f2;
+        color: $color-blanco;
         padding: 20px 50px 0px 50px;
         font-size: 16px;
     }

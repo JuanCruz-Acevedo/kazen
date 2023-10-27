@@ -3,24 +3,24 @@
     flex-direction: column;
     margin-top: 9vh;
     padding-bottom: 40px;
-    background-color: #0f0f0f;
+    background-color: $color-bg;
 }
 
 .main_roster-seccion {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
 .roster_titulo {
     text-align: center;
-    font-family: 'Raleway',sans-serif;
+    font-family: $fuente-principal;
     font-weight: 700;
     margin-top: 40px;
-    color: #ED6FBA;
+    color: $color-rosa_principal;
 }
 
 .roster-seccion-1 {
@@ -53,7 +53,7 @@
 
 .card {
     margin:5px;
-    width: 280px;
+    width: 350px;
 }
 
 .calendario {
@@ -63,18 +63,18 @@
 }
 
 .calendario h2 {
-    font-family: "Raleway", sans-serif;
+    font-family: $fuente-principal;
     text-align: center;
     margin-bottom: 15px;
-    color: #f2f2f2;
+    color: $color-blanco;
 }
 
 
 table {
     border-collapse: collapse;
-    font-family: "Titillium Web", sans-serif;
+    font-family: $fuente-secundaria;
     font-weight: 400;
-    border: 1px solid #f2f2f2;
+    border: 1px solid $color-blanco;
 }
 
 th, td {
@@ -83,25 +83,25 @@ th, td {
 }
 
 th {
-    background-color: #171717;
-    color: #f2f2f2;
+    background-color: $color-header_footer;
+    color: $color-blanco;
 }
 
 td {
-    border: 1px solid #ED6FBA;
-    background-color: #171717;
+    border: 1px solid $color-rosa_principal;
+    background-color: $color-header_footer;
 }
 
 .today {
-    background-color: #f2f2f2;
-    color:#171717;
+    background-color: $color-blanco;
+    color: $color-header_footer;
     font-weight: 700;
     font-size: 20px;
 }
 
 .evento {
-    background-color: #ED6FBA;
-    color:#171717;
+    background-color: $color-rosa_principal;
+    color: $color-header_footer;
     font-weight: 700;
     cursor:pointer
 }
@@ -111,7 +111,7 @@ td {
 }
 
 .diadelmes{
-    color: #f2f2f2;
+    color: $color-blanco;
 }
 
 .diaotromes{
@@ -119,13 +119,13 @@ td {
 }
 
 .card-body {
-    background-color: #171717;
-    font-family: "Titillium Web", sans-serif;
-    color: #f2f2f2;
+    background-color: $color-header_footer;
+    font-family: $fuente-secundaria;
+    color: $color-blanco;
 }
 
 .bordecolor {
-    border: 1px solid #ED6FBA;
+    border: 1px solid $color-rosa_principal;
     border-radius: 0px;
 }
 
@@ -133,6 +133,16 @@ td {
     --bs-card-bg: 0;
 }
 
+@media (max-width:1400px) {
+    .main_roster-seccion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+}
 
 @media (min-width: 992px) {
     .main_roster {
@@ -140,7 +150,7 @@ td {
         flex-direction: column;
         margin-top: 9vh;
         padding-bottom: 40px;
-        background-color: #0f0f0f;
+        background-color: $color-bg;
     }
 
     .main_roster-seccion {
@@ -184,7 +194,7 @@ td {
     
     .card {
         margin:5px;
-        width: 280px;
+        width: 300px;
     }
     
     .calendario {
@@ -194,17 +204,17 @@ td {
     }
     
     .calendario h2 {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         text-align: center;
         margin-bottom: 15px;
-        color: #f2f2f2;
+        color: $color-blanco;
     }
     
     table {
         border-collapse: collapse;
-        font-family: "Titillium Web", sans-serif;
+        font-family: $fuente-secundaria;
         font-weight: 400;
-        border: 1px solid #f2f2f2;
+        border: 1px solid $color-blanco;
     }
     
     th, td {
@@ -213,25 +223,25 @@ td {
     }
     
     th {
-        background-color: #171717;
-        color: #f2f2f2;
+        background-color: $color-header_footer;
+        color: $color-blanco;
     }
     
     td {
-        border: 1px solid #ED6FBA;
-        background-color: #171717;
+        border: 1px solid $color-rosa_principal;
+        background-color: $color-header_footer;
     }
     
     .today {
-        background-color: #f2f2f2;
-        color:#171717;
+        background-color: $color-blanco;
+        color: $color-header_footer;
         font-weight: 700;
         font-size: 20px;
     }
     
     .evento {
-        background-color: #ED6FBA;
-        color:#171717;
+        background-color: $color-rosa_principal;
+        color: $color-header_footer;
         font-weight: 700;
         cursor:pointer
     }
@@ -241,7 +251,7 @@ td {
     }
     
     .diadelmes{
-        color: #f2f2f2;
+        color: $color-blanco;
     }
     
     .diaotromes{
@@ -249,13 +259,13 @@ td {
     }
     
     .card-body {
-        background-color: #171717;
-        font-family: "Titillium Web", sans-serif;
-        color: #f2f2f2;
+        background-color: $color-header_footer;
+        font-family: $fuente-secundaria;
+        color: $color-blanco;
     }
     
     .bordecolor {
-        border: 1px solid #ED6FBA;
+        border: 1px solid $color-rosa_principal;
         border-radius: 0px;
     }
     
@@ -271,7 +281,7 @@ td {
         flex-direction: column;
         margin-top: 90px;
         padding-bottom: 40px;
-        background-color: #0f0f0f;
+        background-color: $color-bg;
     }
     
     .main_roster-seccion {
@@ -315,14 +325,14 @@ td {
     .noticias {
         display: flex;
         flex-direction: row;
-        width: auto;
         justify-content: center;
-        gap: 5px;
+        gap: 0px;
     }
     
     .card {
         margin: 5px;
-        width: 250px;
+        width: 350px;
+        max-width: none;
     }
 
         .calendario {
@@ -334,18 +344,18 @@ td {
     }
     
     .calendario h2 {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         text-align: center;
         margin-bottom: 15px;
-        color: #f2f2f2;
+        color: $color-blanco;
         margin-top: 0px;
     }
         
     table {
         border-collapse: collapse;
-        font-family: "Titillium Web", sans-serif;
+        font-family: $fuente-secundaria;
         font-weight: 400;
-        border: 1px solid #f2f2f2;
+        border: 1px solid $color-blanco;
     }
     
     th, td {
@@ -354,25 +364,25 @@ td {
     }
     
     th {
-        background-color: #171717;
-        color: #f2f2f2;
+        background-color: $color-header_footer;
+        color: $color-blanco;
     }
     
     td {
-        border: 1px solid #ED6FBA;
-        background-color: #171717;
+        border: 1px solid $color-rosa_principal;
+        background-color: $color-header_footer;
     }
     
     .today {
-        background-color: #f2f2f2;
-        color:#171717;
+        background-color: $color-blanco;
+        color: $color-header_footer;
         font-weight: 700;
         font-size: 20px;
     }
     
     .evento {
-        background-color: #ED6FBA;
-        color:#171717;
+        background-color: $color-rosa_principal;
+        color: $color-header_footer;
         font-weight: 700;
         cursor:pointer
     }
@@ -382,7 +392,7 @@ td {
     }
     
     .diadelmes{
-        color: #f2f2f2;
+        color: $color-blanco;
     }
     
     .diaotromes{
@@ -390,13 +400,13 @@ td {
     }
     
     .card-body {
-        background-color: #171717;
-        font-family: "Titillium Web", sans-serif;
-        color: #f2f2f2;
+        background-color: $color-header_footer;
+        font-family: $fuente-secundaria;
+        color: $color-blanco;
     }
     
     .bordecolor {
-        border: 1px solid #ED6FBA;
+        border: 1px solid $color-rosa_principal;
         border-radius: 0px;
     }
 
@@ -408,7 +418,7 @@ td {
         flex-direction: column;
         margin-top: 90px;
         padding-bottom: 40px;
-        background-color: #0f0f0f;
+        background-color: $color-bg;
     }
     
     .main_roster-seccion {
@@ -446,15 +456,15 @@ td {
     
     .noticias {
         display: flex;
-        flex-direction: column;
-        width: auto;
+        flex-direction: row;
         justify-content: center;
-        gap: 5px;
+        gap: 0px;
     }
     
     .card {
         margin: 5px;
-        width: 250px;
+        width: 300px;
+        max-width: none;
     }
 
     .calendario {
@@ -466,19 +476,19 @@ td {
     }
     
     .calendario h2 {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         text-align: center;
         margin-bottom: 15px;
-        color: #f2f2f2;
+        color: $color-blanco;
         margin-top: 0px;
     }
         
     table {
         width: auto;
         border-collapse: collapse;
-        font-family: "Titillium Web", sans-serif;
+        font-family: $fuente-secundaria;
         font-weight: 400;
-        border: 1px solid #f2f2f2;
+        border: 1px solid $color-blanco;
     }
     
     th, td {
@@ -487,25 +497,25 @@ td {
     }
     
     th {
-        background-color: #171717;
-        color: #f2f2f2;
+        background-color: $color-header_footer;
+        color: $color-blanco;
     }
     
     td {
-        border: 1px solid #ED6FBA;
-        background-color: #171717;
+        border: 1px solid $color-rosa_principal;
+        background-color: $color-header_footer;
     }
     
     .today {
-        background-color: #f2f2f2;
-        color:#171717;
+        background-color: $color-blanco;
+        color: $color-header_footer;
         font-weight: 700;
         font-size: 20px;
     }
     
     .evento {
-        background-color: #ED6FBA;
-        color:#171717;
+        background-color: $color-rosa_principal;
+        color: $color-header_footer;
         font-weight: 700;
         cursor:pointer
     }
@@ -515,7 +525,7 @@ td {
     }
     
     .diadelmes{
-        color: #f2f2f2;
+        color: $color-blanco;
     }
     
     .diaotromes{
@@ -523,13 +533,13 @@ td {
     }
     
     .card-body {
-        background-color: #171717;
-        font-family: "Titillium Web", sans-serif;
-        color: #f2f2f2;
+        background-color: $color-header_footer;
+        font-family: $fuente-secundaria;
+        color: $color-blanco;
     }
     
     .bordecolor {
-        border: 1px solid #ED6FBA;
+        border: 1px solid $color-rosa_principal;
         border-radius: 0px;
     }
 }
@@ -547,7 +557,16 @@ td {
             cursor:pointer
         }
     }
+    .noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+    
     .card {
-        width: 200px;
+        margin: 5px;
+        width: 250px;
+        max-width: none;
     }
 }

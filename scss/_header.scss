@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 3;
     width: 100vw;
-    --bs-emphasis-color: #171717;
+    --bs-emphasis-color: $color-header_footer;
     --bs-navbar-padding-y: 1.2rem;
     height: 90px;
 }
@@ -17,8 +17,8 @@
 }
 
 .nav_centro-texto a {
-    color: #f2f2f2;
-    font-family: 'Raleway', sans-serif;
+    color: $color-blanco;
+    font-family: $fuente-principal;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -28,7 +28,7 @@
 
 .nav-link {
     &:focus{
-        color: #ED6FBA;
+        color: $color-rosa_principal;
     }
     &:hover {
         color: #ffb2e0;
@@ -39,7 +39,7 @@
 }
 
 .nav-link[aria-current="page"] {
-    color: #ED6FBA;
+    color: $color-rosa_principal;
 }
 
 .nav-item.dropdown:focus-within .nav-link {
@@ -49,9 +49,9 @@
 .dropdown-menu {
     --bs-dropdown-bg: #171717;
     --bs-dropdown-item-padding-x: 1rem;
-    --bs-dropdown-link-color: #ED6FBA;
+    --bs-dropdown-link-color: #ed6fba;
     --bs-dropdown-link-hover-color: #fff;
-    --bs-dropdown-link-hover-bg: #ED6FBA;
+    --bs-dropdown-link-hover-bg: #ed6fba;
     --bs-dropdown-link-active-color: #fff;
     --bs-dropdown-link-active-bg: #ee56b1;
     --bs-dropdown-min-width: 6rem;
@@ -75,21 +75,21 @@ form{
 .form-control {
     --bs-border-color: #eb81c0;
     &:focus {
-        border-color: #ED6FBA;
+        border-color: $color-rosa_principal;
         box-shadow: 0 0 0 0.20rem rgba(243, 125, 190, 0.664);
     }
 }
 
 .texto-input {
-    font-family: "Titillium Web", sans-serif;
+    font-family: $fuente-secundaria;
 }
 
 .texto-boton-primario {
-    font-family: "Raleway", sans-serif;
+    font-family: $fuente-principal;
     font-weight: 700;
     font-size: medium;
-    --bs-btn-bg: #ED6FBA;
-    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-bg: #ed6fba;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-color: #FFF;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
@@ -99,11 +99,11 @@ form{
 }
 
 .texto-boton-secundario {
-    font-family: "Raleway", sans-serif;
+    font-family: $fuente-principal;
     font-weight: 700;
     font-size: small;
     --bs-btn-color: #fff;
-    --bs-btn-border-color: #ED6FBA;
+    --bs-btn-border-color: #ed6fba;
     --bs-btn-hover-bg: #eb81c0;
     --bs-btn-hover-border-color: #eb6cb8;
     --bs-btn-active-bg: #ee56b1;
@@ -135,7 +135,7 @@ form{
 
     .navbar-toggler {
         margin-right: 3rem;
-        color: #ED6FBA;
+        color: $color-rosa_principal;
         border: 2px solid ;
     }
 
@@ -151,7 +151,7 @@ form{
     }
 
     .navbar-menuexpande {
-        background-color: #171717;
+        background-color: $color-header_footer;
         padding: 20px;
     }
 
@@ -168,11 +168,11 @@ form{
     }
 
     .texto-boton-primario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         font-size: medium;
-        --bs-btn-bg: #ED6FBA;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
@@ -182,11 +182,11 @@ form{
     }
     
     .texto-boton-secundario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         font-size: small;
         --bs-btn-color: #fff;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
         --bs-btn-active-bg: #ee56b1;
@@ -206,7 +206,7 @@ form{
     }
     .navbar-toggler {
         margin-right: 3rem;
-        color: #ED6FBA;
+        color: $color-rosa_principal;
         border: 2px solid ;
     }
     .navbar-toggler-icon {
@@ -220,7 +220,7 @@ form{
         background-size: 100%;
       }
       .navbar-menuexpande {
-        background-color: #171717;
+        background-color: $color-header_footer;
         padding: 20px;
       }
       .navbar-menuexpande form {
@@ -235,11 +235,11 @@ form{
       }
 
       .texto-boton-primario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         font-size: medium;
-        --bs-btn-bg: #ED6FBA;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-bg: #ed6fba;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-color: #FFF;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
@@ -249,11 +249,11 @@ form{
     }
     
     .texto-boton-secundario {
-        font-family: "Raleway", sans-serif;
+        font-family: $fuente-principal;
         font-weight: 700;
         font-size: small;
         --bs-btn-color: #fff;
-        --bs-btn-border-color: #ED6FBA;
+        --bs-btn-border-color: #ed6fba;
         --bs-btn-hover-bg: #eb81c0;
         --bs-btn-hover-border-color: #eb6cb8;
         --bs-btn-active-bg: #ee56b1;
