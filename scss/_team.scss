@@ -1,4 +1,4 @@
-.main_roster {
+.main_team {
     display: flex;
     flex-direction: column;
     margin-top: 9vh;
@@ -6,7 +6,7 @@
     background-color: $color-bg;
 }
 
-.main_roster-seccion {
+.main_team-seccion {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,7 +15,7 @@
     margin-bottom: 40px;
 }
 
-.roster_titulo {
+.team_titulo {
     text-align: center;
     font-family: $fuente-principal;
     font-weight: 700;
@@ -23,15 +23,22 @@
     color: $color-rosa_principal;
 }
 
-.roster-seccion-1 {
+.team-seccion-1 {
     display: flex;
 }
-.roster-seccion-2 {
+.team-seccion-2 {
     display: flex;
 }
-.roster_individual {
+.team_individual {
     margin: 0 20px;
     cursor: pointer;
+    .team_individual-frente {
+        position: absolute;
+        z-index: 1;
+        &:hover {
+            opacity: 0;
+        }
+    }
 }
 
 .noticias-calendario {
@@ -134,7 +141,7 @@ td {
 }
 
 @media (max-width:1400px) {
-    .main_roster-seccion {
+    .main_team-seccion {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -145,7 +152,7 @@ td {
 }
 
 @media (min-width: 992px) {
-    .main_roster {
+    .main_team {
         display: flex;
         flex-direction: column;
         margin-top: 9vh;
@@ -153,7 +160,7 @@ td {
         background-color: $color-bg;
     }
 
-    .main_roster-seccion {
+    .main_team-seccion {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -161,15 +168,15 @@ td {
         margin-bottom: 40px;
     }
 
-    .roster-seccion-1 {
+    .team-seccion-1 {
         display: flex;
     }
 
-    .roster-seccion-2 {
+    .team-seccion-2 {
         display: flex;
     }
 
-    .roster_individual {
+    .team_individual {
         cursor: pointer;
     }
     
@@ -276,7 +283,7 @@ td {
 
 
 @media (min-width: 577px) and (max-width: 991px) {
-    .main_roster {
+    .main_team {
         display: flex;
         flex-direction: column;
         margin-top: 90px;
@@ -284,7 +291,7 @@ td {
         background-color: $color-bg;
     }
     
-    .main_roster-seccion {
+    .main_team-seccion {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -293,17 +300,17 @@ td {
         margin-bottom: 40px;
     }
 
-    .roster-seccion-1 {
+    .team-seccion-1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .roster-seccion-2 {
+    .team-seccion-2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .roster_individual {
+    .team_individual {
         margin: 20px;
         img {
             width: 250px;
@@ -413,7 +420,7 @@ td {
 }
 
 @media (max-width: 576px) {
-    .main_roster {
+    .main_team {
         display: flex;
         flex-direction: column;
         margin-top: 90px;
@@ -421,22 +428,22 @@ td {
         background-color: $color-bg;
     }
     
-    .main_roster-seccion {
+    .main_team-seccion {
         margin-top: 20px;
         gap: 0px;
         margin-bottom: 20px;
     }
-    .roster-seccion-1 {
+    .team-seccion-1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .roster-seccion-2 {
+    .team-seccion-2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .roster_individual {
+    .team_individual {
         margin: 20px;
         img {
             width: 150px;
@@ -546,11 +553,11 @@ td {
 
 
 @media (max-width: 320px) {
-    .main_roster-seccion {
+    .main_team-seccion {
         gap: 0px;
         margin-top: 10px;
     }
-    .roster_individual {
+    .team_individual {
         margin: 5px;
         img {
             width: 100px;
