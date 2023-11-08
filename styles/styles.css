@@ -725,8 +725,6 @@ form {
     cursor: pointer;
   }
   .index_cards1:hover {
-    height: 300px;
-    width: 1000px;
     border: 1px #f2f2f2 solid;
   }
   .index_cards1:hover .index_cards-texto {
@@ -754,8 +752,6 @@ form {
     cursor: pointer;
   }
   .index_cards2:hover {
-    height: 300px;
-    width: 1000px;
     border: 1px #f2f2f2 solid;
   }
   .index_cards2:hover .index_cards-texto {
@@ -836,7 +832,7 @@ form {
 @media (max-width: 576px) {
   .hero_superpuesto {
     position: absolute;
-    top: 30%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -890,8 +886,6 @@ form {
     cursor: pointer;
   }
   .index_cards1:hover {
-    height: 300px;
-    width: 1000px;
     border: 1px #f2f2f2 solid;
   }
   .index_cards1:hover .index_cards-texto {
@@ -919,8 +913,6 @@ form {
     cursor: pointer;
   }
   .index_cards2:hover {
-    height: 300px;
-    width: 1000px;
     border: 1px #f2f2f2 solid;
   }
   .index_cards2:hover .index_cards-texto {
@@ -1001,7 +993,7 @@ form {
 @media (max-width: 320px) {
   .hero_superpuesto {
     position: absolute;
-    top: 27%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -1012,7 +1004,7 @@ form {
     font-size: 16px;
   }
   .texto-hero {
-    margin: 5px 5px 0 5px;
+    margin: 5px 5px 15px 5px;
     font-size: 10px;
   }
   .index_boton-primario {
@@ -1070,8 +1062,6 @@ form {
     cursor: pointer;
   }
   .index_cards1:hover {
-    height: 300px;
-    width: 1000px;
     border: 1px #f2f2f2 solid;
   }
   .index_cards1:hover .index_cards-texto {
@@ -1099,8 +1089,6 @@ form {
     cursor: pointer;
   }
   .index_cards2:hover {
-    height: 300px;
-    width: 1000px;
     border: 1px #f2f2f2 solid;
   }
   .index_cards2:hover .index_cards-texto {
